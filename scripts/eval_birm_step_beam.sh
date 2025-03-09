@@ -62,7 +62,7 @@ for seed in 41 42 43; do
     --max_new_tokens 500 \
     --seed ${seed} \
     --agg_mode mean \
-    --beta 1.0 \
+    --beta 1.5 \
     > ${logging_dir}/${task_name}.log 2>&1
 done
 done
@@ -109,7 +109,7 @@ for seed in 41 42 43; do
     --max_new_tokens 2048 \
     --seed ${seed} \
     --agg_mode mean \
-    --beta 2.5 \
+    --beta 3.0 \
     > ${logging_dir}/${task_name}.log 2>&1
 done
 done
@@ -157,7 +157,7 @@ for seed in 41 42 43; do
     --max_new_tokens 4096 \
     --seed ${seed} \
     --agg_mode mean \
-    --beta 2.0 \
+    --beta 3.5 \
     > ${logging_dir}/${task_name}.log 2>&1
 done
 done
